@@ -78,9 +78,10 @@ module() {
 
   mkdir -p "${pom_dir}"/src/{main,test}/{java,resources}
 
-  mkdir -p "${pom_dir}/src/main/webapp/WEB-INF"
+  if [[ "${packaging}" == war ]]; then
+    mkdir -p "${pom_dir}/src/main/webapp/WEB-INF"
 
-  cat <<WEB > "${pom_dir}/src/main/webapp/WEB-INF/web.xml"
+    cat <<WEB > "${pom_dir}/src/main/webapp/WEB-INF/web.xml"
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -91,6 +92,7 @@ module() {
   <request-character-encoding>UTF-8</request-character-encoding>
 </web-app>
 WEB
+  fi
 
   {
     cat <<POM
