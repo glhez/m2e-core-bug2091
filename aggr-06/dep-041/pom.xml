@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.github.m2e-core.bug2091</groupId>
+    <artifactId>parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../../parent</relativePath>
+  </parent>
+
+  <artifactId>dep-041</artifactId>
+  <packaging>war</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet.jsp</groupId>
+      <artifactId>jakarta.servlet.jsp-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.el</groupId>
+      <artifactId>jakarta.el-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.websocket</groupId>
+      <artifactId>jakarta.websocket-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.m2e-core.bug2091</groupId>
+      <artifactId>dep-001</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.github.m2e-core.bug2091</groupId>
+      <artifactId>dep-002</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.github.m2e-core.bug2091</groupId>
+      <artifactId>dep-003</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.github.m2e-core.bug2091</groupId>
+      <artifactId>dep-004</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.github.m2e-core.bug2091</groupId>
+      <artifactId>dep-005</artifactId>
+    </dependency>
+  </dependencies>
+</project>

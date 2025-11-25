@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.github.m2e-core.bug2091</groupId>
+    <artifactId>parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../../../parent</relativePath>
+  </parent>
+
+  <artifactId>aggr-04-01-01</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>dep-016</module>
+    <module>dep-017</module>
+    <module>dep-018</module>
+    <module>dep-019</module>
+    <module>dep-020</module>
+  </modules>
+</project>
