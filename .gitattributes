@@ -1,0 +1,19 @@
+#
+# maven wrapper stuff
+#
+mvnw                                      eol=lf
+mvnwDebug                                 eol=lf
+mvnw.cmd                                  eol=crlf
+mvnwDebug.cmd                             eol=crlf
+.mvn/wrapper/MavenWrapperDownloader.java  eol=lf
+.mvn/wrapper/maven-wrapper.properties     eol=lf
+
+#
+# Other
+#
+*.bash   eol=lf
+*.sh     eol=lf
+*.cmd    eol=crlf
+*.bat    eol=crlf
+
+

@@ -1,0 +1,41 @@
+root=true
+
+#
+# Global properties
+#
+[*.{bash,java,cpp,py,xml,xsd,json,jsonc,json5,yml,yaml}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.patch]
+trim_trailing_whitespace = false
+
+#
+# maven wrapper stuff
+#
+[.mvn/wrapper/maven-wrapper.properties]
+end_of_line = lf
+[.mvn/wrapper/MavenWrapperDownloader.java]
+end_of_line = lf
+[mvnw]
+end_of_line = lf
+[mvnw.cmd]
+end_of_line = crlf
+
+#
+# Script files
+#
+[*.{bash,sh}]
+end_of_line = lf
+
+[*.{cmd,bat}]
+end_of_line = crlf
+
+[*.{sh,bash}]
+switch_case_indent = true
+space_redirects    = true
+keep_padding       = true
+function_next_line = false
